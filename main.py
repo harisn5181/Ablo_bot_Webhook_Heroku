@@ -1015,8 +1015,8 @@ def main():
 #     dp.add_handler(CommandHandler("caps", caps))
   
     
-    dp.add_handler(CommandHandler('start', next))
-    dp.add_handler(CommandHandler('search', next))
+    dp.add_handler(CommandHandler('start', next,run_async=True))
+    dp.add_handler(CommandHandler('search', next,run_async=True))
     dp.add_handler(CommandHandler('stop', stop))
     dp.add_handler(CommandHandler('rules', rules))
     dp.add_handler(CommandHandler('report',report)) 
@@ -1025,9 +1025,9 @@ def main():
     dp.add_handler(CommandHandler('sharelink', sharelink))
     dp.add_handler(CommandHandler('help',help))
     dp.add_handler(CommandHandler('thavakkal', thavakkal,run_async=True))
-    dp.add_handler(CommandHandler('next', next))
-    dp.add_handler(MessageHandler(Filters.all, process_message))
-    # on noncommand i.e message - echo the message on Telegram
+    dp.add_handler(CommandHandler('next', next,run_async=True))
+    dp.add_handler(MessageHandler(Filters.all, process_message,run_async=True))
+
   
 
     # log all errors
