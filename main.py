@@ -58,7 +58,7 @@ def rules(update,context):
 
     
 
-eply_text(update.message.text)
+#reply_text(update.message.text)
 
 def error(update, context):
     """Log Errors caused by Updates."""
