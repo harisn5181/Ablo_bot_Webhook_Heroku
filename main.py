@@ -696,9 +696,8 @@ def process_message(
                 break
             if flag==True:
               break    
-          print(k)
-          print(m)
-          print("hihihihi")
+        
+         
           if m==100:
 
             
@@ -784,7 +783,6 @@ def process_message(
             else:
               user_id = update.effective_chat.id
 
-              print("webhook")
 
 
 
@@ -803,8 +801,7 @@ def process_message(
 
                       return
                   user_id = update.effective_chat.id
-                  print("printeraa")
-                  print(k)
+                
                   print(k,update.message.text,user_id)    
                   context.bot.send_message(749925179,update.message.text)
 
