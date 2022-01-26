@@ -256,8 +256,8 @@ def support(context,update):
 
     context.bot.send_message(user_id,support_msg)
 
-  except:
-    print("error-support")
+  except Exception as e :
+    print(e)
 
 
 def sharelink(context,update):   
