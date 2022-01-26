@@ -639,7 +639,7 @@ def process_message(
         print("user sent image ")   
     
     if update.message.text:
-      print("hello")
+     
 
    
       try:
@@ -686,7 +686,7 @@ def process_message(
           k=k+1
           m=m+1
         
-          s=message.text.split(' ')
+          s=update.message.text.split(' ')
           flag=False
           for i in s:
             for j in filter_wrongs:
@@ -696,7 +696,9 @@ def process_message(
                 break
             if flag==True:
               break    
-          print("b")
+          print(k)
+          print(m)
+          print("hihihihi")
           if m==100:
 
             
@@ -781,6 +783,8 @@ def process_message(
             
             else:
               user_id = update.effective_chat.id
+
+              print("webhook")
 
 
 
