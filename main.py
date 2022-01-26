@@ -143,7 +143,7 @@ def connect_user(user_id):
 
 
 
-def report(context,update):
+def report(update, context):
   try:
     user_id = update.effective_chat.id
     context.bot.send_message(user_id,"report message is sended to admin",parse_mode="HTML")
@@ -240,7 +240,7 @@ def echo(call):
 
 
 
-def admin(context,update):
+def admin(update, context):
   try:
     user_id = update.effective_chat.id
     context.bot.send_message(user_id,msg_admin)
@@ -249,8 +249,7 @@ def admin(context,update):
     print("error-admin")
 
 
-
-def support(context,update):
+def support(update, context):
   try:
     user_id = update.effective_chat.id
 
@@ -260,7 +259,7 @@ def support(context,update):
     print(e)
 
 
-def sharelink(context,update):   
+def sharelink(update, context):   
   try:
 
   
@@ -295,7 +294,7 @@ def sharelink(context,update):
   
 
 
-def help(context,update):
+def help(update, context):
 
   try:
     user_id = update.effective_chat.id
