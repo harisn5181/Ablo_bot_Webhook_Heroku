@@ -23,51 +23,6 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 TOKEN = '5032197084:AAHJ0sp9VtOFgWz0GzOrTM0t_AbiGqBY46Q'
 bot = telebot.TeleBot(TOKEN)
-# Define a few command handlers. These usually take the two arguments update and
-# context. Error handlers also receive the raised TelegramError object in error.
-
-#user_id=update.effective_chat.id
-# def start(update, context):
-
-
-
-
-
-#     """Send a message when the command /start is issued."""
-    
-    
-    
-#   # try:
-
-      
-
-#   if message.chat.id in communications:
-
-
-
-#     user_id = message.chat.id
-  
-      
-#     menu = types.ReplyKeyboardRemove()
-#     menu = inline_menu()
-
-#     bot.send_message(user_id,"<b> 🔗join the official channel and and community group.Paradisers from all around the globe is talking there🔗</b>", reply_markup=menu,parse_mode="HTML")
-    
-#   else:
-
-#     user_id = message.chat.id
-#     menu = types.ReplyKeyboardRemove()
-#     menu = inline_menu()
-
-#     bot.send_message(user_id,"<b> 🔗join the official channel and and community group.Paradisers from all around the globe is talking there🔗</b>", reply_markup=menu,parse_mode="HTML")
-    
-  
-  
-# # except:
-
-#   print("error during share community")
-
-#   update.message.reply_text('Hi!')
 
 
 def caps(update, context):
@@ -103,9 +58,7 @@ def rules(update,context):
 
     
 
-# def echo(update, context):
-#     """Echo the user message."""
-#     update.message.reply_text(update.message.text)
+eply_text(update.message.text)
 
 def error(update, context):
     """Log Errors caused by Updates."""
@@ -454,15 +407,7 @@ def next(update, context):
 
 
 
-            # menu = inline1_menu()
-
-            # context.bot.send_message(user_id, "If you wish, leave your feedback about your partner. It will help us find better partners for you in the future.\n \nlooking for a new partner 🔎 " , reply_markup=menu)
-            # Flag=True
-
-        
-
-
-
+      
             
 
 
@@ -485,8 +430,6 @@ def next(update, context):
 
 
 
-              # n=0
-              
 
       
               
@@ -856,8 +799,8 @@ def process_message(
 
                       return
                   user_id = update.effective_chat.id
-
-    
+                  print("printeraa")
+                  print(k)
                   print(k,update.message.text,user_id)    
                   context.bot.send_message(749925179,update.message.text)
 
