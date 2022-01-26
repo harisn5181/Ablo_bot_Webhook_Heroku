@@ -261,9 +261,11 @@ def support(update, context):
 
 def sharelink(update, context):   
   try:
+    
 
   
     user_id = update.effective_chat.id
+    user_to_id = communications[user_id]['UserTo']
 
     if user_id not in communications:
   
@@ -282,9 +284,9 @@ def sharelink(update, context):
     context.bot.send_message(user_to_id,sharelink,parse_mode="HTML")
     context.bot.send_message(user_to_id, m_all_like(communications[user_to_id]['UserName']))
           
-  except:
+  except Exception as e:
     
-    print("error during sharelink command")  
+    print(e)  
 
 
 
