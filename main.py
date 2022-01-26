@@ -21,8 +21,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                     level=logging.INFO)
 
 logger = logging.getLogger(__name__)
-TOKEN = '5032197084:AAHJ0sp9VtOFgWz0GzOrTM0t_AbiGqBY46Q
-'
+TOKEN = '5032197084:AAHJ0sp9VtOFgWz0GzOrTM0t_AbiGqBY46Q'
 bot = telebot.TeleBot(TOKEN)
 # Define a few command handlers. These usually take the two arguments update and
 # context. Error handlers also receive the raised TelegramError object in error.
@@ -1038,8 +1037,7 @@ def main():
     updater.start_webhook(listen="0.0.0.0",
                           port=int(PORT),
                           url_path=TOKEN)
-    updater.bot.setWebhook('https://abllbot.herokuapp.com/' + '5032197084:AAHJ0sp9VtOFgWz0GzOrTM0t_AbiGqBY46Q
-')
+    updater.bot.setWebhook('https://abllbot.herokuapp.com/' + '5032197084:AAHJ0sp9VtOFgWz0GzOrTM0t_AbiGqBY46Q')
 
     # Run the bot until you press Ctrl-C or the process receives SIGINT,
     # SIGTERM or SIGABRT. This should be used most of the time, since
